@@ -104,8 +104,7 @@ export const resourceCard = (r: Resource, saved: boolean) => `
   </article>`;
 
 // Text typed by the user must not be parsed as HTML when inserted with innerHTML
-const escapeHtml = (text: string) =>
-  text.replace(/[&<>"']/g, (c) => `&#${c.charCodeAt(0)};`);
+const escapeHtml = (text: string) => text.replace(/[&<>"']/g, (c) => `&#${c.charCodeAt(0)};`);
 
 export const emptyState = (title: string, text: string) => `
   <div class="col-span-full flex flex-col items-center rounded-lg border border-dashed border-slate-300 px-6 py-16 text-center dark:border-slate-700">

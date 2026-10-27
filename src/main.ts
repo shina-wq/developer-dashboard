@@ -111,8 +111,16 @@ function resourcesView() {
 function bookmarksView() {
   const grid =
     state.bookmarks.size === 0
-      ? resourceGrid([], 'No bookmarks yet', 'Tap the bookmark icon on any resource to save it here.')
-      : resourceGrid(filterResources(), 'No bookmarks found', `None of your bookmarks match “${state.query}”.`);
+      ? resourceGrid(
+          [],
+          'No bookmarks yet',
+          'Tap the bookmark icon on any resource to save it here.',
+        )
+      : resourceGrid(
+          filterResources(),
+          'No bookmarks found',
+          `None of your bookmarks match “${state.query}”.`,
+        );
 
   return `<h1 class="mb-6 text-2xl font-bold">Bookmarks</h1>${grid}`;
 }

@@ -140,8 +140,18 @@ export const quickLinks: QuickLink[] = [
     link: 'https://github.com',
     icon: siGithub,
   },
-  { name: 'npm', description: 'Find JavaScript packages', link: 'https://www.npmjs.com', icon: siNpm },
-  { name: 'Figma', description: 'Design and prototype', link: 'https://www.figma.com', icon: siFigma },
+  {
+    name: 'npm',
+    description: 'Find JavaScript packages',
+    link: 'https://www.npmjs.com',
+    icon: siNpm,
+  },
+  {
+    name: 'Figma',
+    description: 'Design and prototype',
+    link: 'https://www.figma.com',
+    icon: siFigma,
+  },
   {
     name: 'Chrome DevTools',
     description: 'Debug and inspect',
